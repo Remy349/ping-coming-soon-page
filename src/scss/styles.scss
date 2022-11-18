@@ -35,6 +35,14 @@ ul {
   margin-right: 2rem;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 .ping {
   display: flex;
   flex-direction: column;
@@ -91,9 +99,26 @@ ul {
       padding: .8rem 3rem .8rem 2rem;
       font-size: 1rem;
 
+      &.error {
+        border: 1px solid $Light-Red;
+
+        &::placeholder {
+          color: $Very-Dark-Blue;
+        }
+      }
+
       &::placeholder {
         color: $Pale-Blue;
       }
+    }
+
+    &-message {
+      color: $Light-Red;
+      font-style: italic;
+      font-size: .8rem;
+      text-align: center;
+      margin-top: .5rem;
+      margin-bottom: 1rem;
     }
   }
 
