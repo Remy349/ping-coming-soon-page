@@ -1,13 +1,9 @@
 import React from 'react'
 import { Footer } from './components/Footer'
-import styled from 'styled-components'
+import { ButtonSubmit } from './components/styled/ButtonSubmit'
 
 import logo from './images/logo.svg'
 import illustration from './images/illustration-dashboard.png'
-
-const ButtonSubmit = styled.button`
-  font-family: inherit;
-`
 
 function App() {
   const handleOnSubmit = (e) => {
@@ -16,7 +12,7 @@ function App() {
 
   return (
     <>
-      <main className='ping'>
+      <main className='ping container'>
         <div className='ping__logo'>
           <img className='ping__logo-img' src={logo} alt='Ping Logo' />
         </div>
